@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Form </title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<form>
+		<div class="itemform row">
+			<div class="form1">
+				<label for="NamaDepan"> Nama Depan</label>
+				<label for="NamaLengkap">Nama Lengkap</label>
+				<label for="Alamat"> Alamat Lengkap</label>
+			</div>
+			<div class="form2">
+				<input type="text" class="InputText" id="NamaDepan" placeholder="Nama Depan Anda"> <br>
+				<input type="text" class="InputText" id="NamaLengkap" placeholder="Nama Lengkap Anda" > <br>
+				<input type="text" class="InputText" id="Alamat"
+				placeholder="Alamat Lengkap Anda" > <br>
+			</div>
+		</div>
+
+		<br><br>
+		<fieldset>
+			<legend>Jenis Kelamin</legend>
+			<input type="radio" class="radiocheck" id="pria" name="gender">
+			<label for="pria"> Pria </label> <br>
+
+			<input type="radio" class="radiocheck" id="wanita" name="gender">
+			<label for="wanita"> Wanita</label>
+		</fieldset>
+			
+		<br><br>
+		<fieldset>
+			<legend> Olahraga Kesukaan  </legend>
+			<input type="checkbox" class="radiocheck" id="bulutangkis" name="sport">
+			<label for="bulutangkis"> Bulutangkis</label> <br>
+
+			<input type="checkbox" class="radiocheck" id="volly" name="sport">
+			<label for="volly"> Volly </label> <br>
+
+			<input type="checkbox" class="radiocheck" id="basket" name="sport">
+			<label for="basket"> Basket </label>
+		</fieldset>
+
+		<br><br>
+		Agama 
+		<select>
+			<option>Islam</option>
+			<option>Kristen</option>
+			<option>Katolik</option>
+			<option>Buddha</option>
+			<option>Hindu</option>
+			<option>Konghucu</option>
+		</select>
+
+		<br><br>
+		Keterangan
+		<textarea rows="5" cols="60"></textarea>
+
+		<br><br>
+		<div class="tool">
+		Password Anda <input type="password" placeholder="Password Anda">
+		<div class="tips">
+		<input type="submit" value="Kirim"><span> Mengirimkan Data Inputan</span>
+		</div>
+		<button type="button" onclick="alert('melakukan registrasi')"> sedang apa saya ?</button>
+		</div>
+	</form>
+</body>
+</html>
